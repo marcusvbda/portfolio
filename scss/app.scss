@@ -1,5 +1,13 @@
 $marginContainer : 90px;
-$primaryColor : #270336;
+$primaryColor : #620279;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin : 0;
+}	
 
 html {
 	background : white;
@@ -11,8 +19,8 @@ html {
 	display: none!important;
 }
 
-.f-50 {
-	font-size : 50px;
+.f-30 {
+	font-size : 30px;
 }
 
 .container {
@@ -135,9 +143,6 @@ html {
 }
 
 @media only screen and (max-width: 768px) {
-	body {
-		margin : 0;
-	}	
 	.container {
 		margin-left: 10px;
 		margin-right: 10px;
@@ -201,16 +206,69 @@ html {
 
 .avatar {
 	position: relative;
-    background-color: #270336;
-    width: 300px;
-	height: 300px;
+	width: 20%;
+    height: auto;
 	overflow: hidden;
 	border-radius : 100%;
 	background: rgb(39,3,54);
-	background: linear-gradient(180deg, rgba(39,3,54,1) 35%, rgba(0,0,0,1) 100%);	
+	background: linear-gradient(180deg,$primaryColor 35%, rgba(0,0,0,1) 100%);	
 	margin-bottom: 50px;
 }
 
 .mt-50 {
 	margin-top: 50px;
+}
+
+.hero-endsection {
+	position: relative;
+    width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+	.hero-endsection {
+		width : 95%;
+	}
+	
+	.avatar {
+		width: 80%;
+	}
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.about-hero {
+	background-color : $primaryColor;
+	color : white;
+	.presentation {
+		padding-top: 100px;
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 50px;
+		font-weight: bolder;
+	}
+	.presentation-description {
+		width: 60%;
+		margin-bottom: 100px;
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.about-hero {
+		.presentation {
+			font-size: 30px;
+			padding-top: 50px;
+			margin-bottom: 20px;
+		}
+		.presentation-description {
+			width: 90%;
+			margin-bottom: 50px;
+		}
+	}
 }
