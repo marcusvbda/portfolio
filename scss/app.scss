@@ -1,5 +1,6 @@
 $marginContainer : 90px;
 $primaryColor : #620279;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100;900&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -211,7 +212,7 @@ html {
 	overflow: hidden;
 	border-radius : 100%;
 	background: rgb(39,3,54);
-	background: linear-gradient(180deg,$primaryColor 35%, rgba(0,0,0,1) 100%);	
+	background: linear-gradient(180deg,$primaryColor 0%, rgba(0,0,0,1) 100%);	
 	margin-bottom: 50px;
 }
 
@@ -251,10 +252,14 @@ html {
 		font-size: 40px;
 		margin-bottom: 50px;
 		font-weight: bolder;
+		font-family: 'Roboto', sans-serif;
 	}
 	.presentation-description {
 		width: 60%;
-		margin-bottom: 100px;
+		margin-bottom: 150px;
+		font-family: 'Oswald', sans-serif;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
 	}
 }
 
@@ -268,7 +273,61 @@ html {
 		}
 		.presentation-description {
 			width: 90%;
-			margin-bottom: 50px;
+			margin-bottom: 100px;
 		}
 	}
+}
+
+.skills-hero {
+	position: relative;
+	.skills-cards {
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		background: white;
+		position: absolute;
+		border: 1px solid #e3e3e3;
+		top: -70px;
+		border-radius: 20px;
+		.skills-card {
+			padding : 30px;
+			width : 33.33%;
+			&.middle {
+				border-right: 1px solid #e3e3e3;
+				border-left: 1px solid #e3e3e3;
+			}
+			.skill-icon {
+				width:50px;
+				height: 50px;
+			}
+		}
+	}
+}
+
+.pt-20 {
+	padding-top:20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.skills-hero {
+		.skills-cards {
+			position: relative;
+			width: 90%;
+			flex-direction: column;
+			.skills-card {
+				padding : 30px;
+				width :auto;
+				&.middle {
+					border-top: 1px solid #e3e3e3;
+					border-bottom: 1px solid #e3e3e3;
+				}
+				.skill-icon {
+					width:50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+	
 }
