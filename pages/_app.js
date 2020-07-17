@@ -3,6 +3,7 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import GlobalContextProvider from '../context/globalContext'
 import ParseCookies from '../utils/parseCookies'
+import "../scss/app.scss"
 
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())
@@ -26,9 +27,9 @@ App.getInitialProps = async ({ Component, ctx }) => {
     const getConfigProps = ctx => {
         const { req } = ctx
         const { language } = ParseCookies(req)
-
         return {
-            language: language || "PT_BR"
+            language: language || "PT_BR",
+            icon: process.env.ICON || "https://via.placeholder.com/100"
         }
     }
     return { pageProps: await getChildProps(Component, ctx), config: getConfigProps(ctx) }

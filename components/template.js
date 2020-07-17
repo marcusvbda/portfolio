@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
+import Navbar from './navbar'
 
 const Template = ({ children, title, description, image, type }) => {
-    const defaultTitle = "Vinicius Bassalobre"
+    const defaultTitle = "Marcus Vinicius Bassalobre de Assis"
     const defaultDescription = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum nunc id erat suscipit, in dignissim enim tristique.`
-    const defaultImage = process.env.FAVICON
     const defaultImageExtension = "image/png"
     const defaultType = "website"
 
@@ -18,10 +18,7 @@ const Template = ({ children, title, description, image, type }) => {
         return description
     }
 
-    const getImage = () => {
-        if (!image) return defaultImage
-        return image
-    }
+    const getImage = () => image
 
     const getImageExtension = () => {
         if (!image) return defaultImageExtension
@@ -45,6 +42,7 @@ const Template = ({ children, title, description, image, type }) => {
                 <meta property="og:url" content={getImageExtension()} key="url" />
                 <meta property="og:type" content={getType()} key="type" />
             </Head>
+            <Navbar />
             {children}
         </div>
     )

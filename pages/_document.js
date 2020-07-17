@@ -10,7 +10,7 @@ class _Document extends Document {
         return (
             <Html>
                 <Head>
-                    <link rel="icon" type="image/png" href={process.env.FAVICON} />
+                    <link rel="icon" type="image/png" href={process.env.ICON} />
                 </Head>
                 <body>
                     <Main />
