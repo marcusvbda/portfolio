@@ -111,6 +111,9 @@ html {
 .navbar-burger {
 	margin: 1em;
 	width: 30px;
+	&:focus {
+		outline: unset;
+	}
 	&:after, &:before, span {
 		background-color: $primaryColor;
 		border-radius: 3px;
@@ -186,9 +189,11 @@ html {
 		width: 35px;
 		border-radius: 100%;
 		background-position: center;
-		opacity: .5;
+		opacity: .3;
+		transform : scale(.8);
 		transition: .7s;
 		&.active {
+			transform: scale(1);
 			opacity: 1;
 		}
 		&.brazil {

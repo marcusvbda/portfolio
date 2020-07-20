@@ -9,10 +9,10 @@ const Navbar = () => {
 
     const toggleMenu = () => setShowMenu(!showMenu)
 
-    const mobileMenu = () => {
+    const MobileMenu = () => {
         return (
             <div className="flex-row x-center y-center">
-                {languageSelector()}
+                {LanguageSelector()}
                 <div className={`navbar-burger cursor-pointer hover-opacity hover-scale ${showMenu ? 'is-active' : ''}`} onClick={() => toggleMenu()}>
                     <span></span>
                 </div>
@@ -20,7 +20,7 @@ const Navbar = () => {
         )
     }
 
-    const sayHelloButton = () => {
+    const SayHelloButton = () => {
         return (
             <Link href="/contact" >
                 <a className="sayHello">{translate('navbar.sayhello')}</a>
@@ -28,7 +28,7 @@ const Navbar = () => {
         )
     }
 
-    const languageSelector = () => {
+    const LanguageSelector = () => {
         return (
             <div className="language-selector mx-20">
                 <div className={`language-item brazil cursor-pointer ${systemConfig.language == "PT_BR" ? 'active' : ''}`} onClick={() => setLanguage("PT_BR")}></div>
@@ -47,15 +47,15 @@ const Navbar = () => {
                 </Link>
                 <div className="only-web">
                     <div className="flex-row x-center y-center">
-                        {languageSelector()}
-                        {sayHelloButton()}
+                        {LanguageSelector()}
+                        {SayHelloButton()}
                     </div>
                 </div>
-                <div className="only-mobile">{mobileMenu()}</div>
+                <div className="only-mobile">{MobileMenu()}</div>
             </div>
             <div className="only-mobile">
                 <div className={`mobile-menu-content flex-column x-center y-center ${showMenu ? 'is-active' : ''}`}>
-                    {sayHelloButton()}
+                    {SayHelloButton()}
                 </div>
             </div>
         </nav>
