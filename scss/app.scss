@@ -286,7 +286,7 @@ html {
 .skills-hero {
 	position: relative;
 	.skills-cards {
-		width: 80%;
+		width: 65%;
 		display: flex;
 		flex-direction: row;
 		background: white;
@@ -326,6 +326,8 @@ html {
 				&.middle {
 					border-top: 1px solid #e3e3e3;
 					border-bottom: 1px solid #e3e3e3;
+					border-left: unset;
+					border-right: unset;
 				}
 				.skill-icon {
 					width:50px;
@@ -335,4 +337,23 @@ html {
 		}
 	}
 	
+}
+
+.my-20 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.f-25 {
+	font-size: 25px;
+}
+
+.text-primary {
+	color: $primaryColor;
+}
+
+
+.my-0 {
+	margin-top:0px;
+	margin-bottom: 0px;
 }

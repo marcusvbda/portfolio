@@ -42,22 +42,51 @@ const Home = () => {
             <div className="skills-hero flex-column x-center x-center y-center" id="skills">
                 <div className="skills-cards">
                     <div className="skills-card">
-                        <div className="flex-row x-center">
-                            <img className="skill-icon" src="/images/frontend.png" />
+                        <div className="flex-column x-center">
+                            <div className="text-center">
+                                <img className="skill-icon" src="/images/frontend.png" />
+                            </div>
+                            <b className="text-center my-20 f-25">Frontend</b>
+                            <span className="text-center my-20">{translate('index.skill_frontend_title')}</span>
+                            <b className="text-center text-primary">{translate('index.technologies')}</b>
+                            <p className="text-center">HTML, CSS & Javascript</p>
+                            <span className="text-center my-20">
+                                <b className="text-center text-primary my-20">{translate('index.skill_tool')}</b>
+                            </span>
+                            {["React", "Vue", "NextJs", "NuxtJs", "Bootstrap", "Materialize", "Bulma", "Photoshop CC", "Visual Studio Code"].map(x => (
+                                <p className="my-0 text-center" key={x}>{x}</p>)
+                            )}
                         </div>
                     </div>
                     <div className="skills-card middle">
-                        <div className="flex-row x-center">
-                            <img className="skill-icon" src="/images/code.png" />
+                        <div className="flex-column x-center">
+                            <div className="text-center">
+                                <img className="skill-icon" src="/images/mentor.png" />
+                            </div>
+                            <b className="text-center my-20 f-25">{translate('index.academic')}</b>
+                            <span className="text-center my-20">{translate('index.academic_title')}</span>
                         </div>
                     </div>
                     <div className="skills-card">
-                        <div className="flex-row x-center">
-                            <img className="skill-icon" src="/images/mentor.png" />
+                        <div className="flex-column x-center">
+                            <div className="text-center">
+                                <img className="skill-icon" src="/images/code.png" />
+                            </div>
+                            <b className="text-center my-20 f-25">Backend</b>
+                            <span className="text-center my-20">{translate('index.skill_backend_title')}</span>
+                            <b className="text-center text-primary">{translate('index.technologies')}</b>
+                            <p className="text-center">PHP, MongoDB, MYSQL, C#, ASP.NET CORE & PHP</p>
+                            <span className="text-center my-20">
+                                <b className="text-center text-primary my-20">{translate('index.skill_tool')}</b>
+                            </span>
+                            {["Laravel", "ASP.NET CORE", "Magento", "Express", "Wordpress", "Visual Studio Code"].map(x => (
+                                <p className="my-0 text-center" key={x}>{x}</p>)
+                            )}
+
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         )
     }
 
