@@ -1,9 +1,9 @@
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-import GlobalContextProvider from '../context/globalContext'
-import ParseCookies from '../utils/parseCookies'
-import "../scss/app.scss"
+import GlobalContextProvider from '@/context/globalContext'
+import ParseCookies from '@/utils/parseCookies'
+import "@/scss/app.scss"
 
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())

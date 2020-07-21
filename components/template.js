@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
-import Navbar from './navbar'
+import Navbar from '@/components/navbar'
 
 const Template = ({ children, title, description, image, type }) => {
     const defaultTitle = "Marcus Vinicius Bassalobre de Assis"
-    const defaultDescription = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur interdum nunc id erat suscipit, in dignissim enim tristique.`
+    const defaultDescription = `Marcus Vinicius Bassalobre de Assis, Backend & Frontend developer`
     const defaultImageExtension = "image/png"
     const defaultType = "website"
 

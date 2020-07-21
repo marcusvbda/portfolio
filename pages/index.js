@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
-import { GlobalContext } from '../context/globalContext'
-import Template from '../components/template'
+import { GlobalContext } from '@/context/globalContext'
+import Template from '@/components/template'
 import Link from 'next/link'
 import { Container } from 'react-bootstrap'
 
@@ -17,6 +17,9 @@ const Home = () => {
                         <div className="avatar my-5">
                             <img className="w-100" src="/images/photo.png" alt="avatar" />
                         </div>
+                        <Link href="#about">
+                            <a className="about-btn">{translate('index.know_more')} ...</a>
+                        </Link>
                         <div className="hero-endsection mt-5">
                             <img className="w-100" src="/images/hero.png" alt="hero" />
                         </div>

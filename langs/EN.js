@@ -11,6 +11,7 @@ const EN = {
     "index.technologies": "Technologies",
     "index.my_recent_jobs": "My recent jobs",
     "index.recent_jobs": "Here are a few projects I've worked on recently. Want to see more?",
+    "index.know_more": "More about me",
 
     "navbar.sayhello": "Say Hello",
 }

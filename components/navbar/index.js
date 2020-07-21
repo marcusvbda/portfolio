@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
-import Logo from './logo'
+import Logo from './_logo'
 import Link from 'next/link'
-import { GlobalContext } from '../context/globalContext'
+import { GlobalContext } from '../../context/globalContext'
 import { Container } from 'react-bootstrap'
 
 const Navbar = () => {

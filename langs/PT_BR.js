@@ -11,7 +11,7 @@ const PT_BR = {
     "index.technologies": "Tecnologias",
     "index.my_recent_jobs": "Meus jobs recentes",
     "index.recent_jobs": "Aqui alguns dos projetos que trabalhei recentemente. Deseja ver mais ?",
-
+    "index.know_more": "Saiba mais",
     "navbar.sayhello": "Diga um Olá",
 }
 export default PT_BR

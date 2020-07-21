@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { GlobalContext } from '../context/globalContext'
+import { GlobalContext } from '../../context/globalContext'
 
 const Logo = ({ h, w }) => {
     const { systemConfig } = useContext(GlobalContext)

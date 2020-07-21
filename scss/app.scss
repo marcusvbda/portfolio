@@ -170,6 +170,20 @@ html {
 	color: $primaryColor!important;
 }
 
+.about-btn {
+	color :$primaryColor!important;
+	font-weight: bolder;
+	border: 2px solid $primaryColor;
+    padding: 10px 30px 10px 30px;
+	border-radius: 30px;
+	transition: .7s;
+	text-decoration: none!important;
+	&:hover {
+		background-color: $primaryColor;
+		color: white!important;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.avatar {
 		width: 80%;
