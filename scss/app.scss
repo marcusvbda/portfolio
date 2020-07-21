@@ -290,9 +290,8 @@ html {
 		display: flex;
 		flex-direction: row;
 		background: white;
-		position: absolute;
 		border: 1px solid #e3e3e3;
-		top: -70px;
+		margin-top: -100px;
 		border-radius: 20px;
 		.skills-card {
 			padding : 30px;
@@ -319,6 +318,7 @@ html {
 		.skills-cards {
 			position: relative;
 			width: 90%;
+			margin-top: -70px;
 			flex-direction: column;
 			.skills-card {
 				padding : 30px;
@@ -352,8 +352,20 @@ html {
 	color: $primaryColor;
 }
 
-
 .my-0 {
 	margin-top:0px;
 	margin-bottom: 0px;
+}
+
+.my-50 {
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.f-40 {
+	font-size : 40px;
+}
+
+.ml-10 {
+	margin-left: 10px;
 }

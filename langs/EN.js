@@ -9,7 +9,8 @@ const EN = {
     "index.skill_backend_title": "I value a simple content structure, clean design standards and agile interactions.",
     "index.academic_title": "I graduated in systems analysis and development in 2016, but I always worked and studied new technologies by my self.",
     "index.technologies": "Technologies",
-
+    "index.my_recent_jobs": "My recent jobs",
+    "index.recent_jobs": "Here are a few projects I've worked on recently. Want to see more?",
 
     "navbar.sayhello": "Say Hello",
 }

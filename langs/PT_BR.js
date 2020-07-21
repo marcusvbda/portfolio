@@ -9,6 +9,8 @@ const PT_BR = {
     "index.skill_backend_title": "Valorizo ​​uma estrutura de conteúdo simples, padrões de design limpos e interações ágeis.",
     "index.academic_title": "Me formei em analise e desenvolvimento de sistemas em 2016,  mas sempre trabalhei e estudei novas técnologias por conta própria.",
     "index.technologies": "Tecnologias",
+    "index.my_recent_jobs": "Meus jobs recentes",
+    "index.recent_jobs": "Aqui alguns dos projetos que trabalhei recentemente. Deseja ver mais ?",
 
     "navbar.sayhello": "Diga um Olá",
 }

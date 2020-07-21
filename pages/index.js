@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../context/globalContext'
 import Template from '../components/template'
+import Link from 'next/link'
 
 const Home = () => {
     const { systemConfig, translate } = useContext(GlobalContext)
@@ -90,11 +91,31 @@ const Home = () => {
         )
     }
 
+    const RecentJobs = () => {
+        return (
+            <div className="recent-hero flex-column x-center x-center y-center my-50" id="about">
+                <div className="container">
+                    <h4 className="text-center f-40">{translate('index.my_recent_jobs')}</h4>
+                    <div className="flex-row x-center">
+                        <div className="text-center">{translate('index.recent_jobs')}
+                            <b className="ml-10">
+                                <Link href="/contact">
+                                    <a className="text-primary">{translate('navbar.sayhello')}</a>
+                                </Link>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <Template title="Home" image={systemConfig.icon}>
             {HomeSection()}
             {AboutSection()}
             {SkillsSection()}
+            {RecentJobs()}
         </Template >
     )
 }
