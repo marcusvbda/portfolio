@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import Logo from './logo'
 import Link from 'next/link'
 import { GlobalContext } from '../context/globalContext'
+import { Container } from 'react-bootstrap'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -11,7 +12,7 @@ const Navbar = () => {
 
     const MobileMenu = () => {
         return (
-            <div className="flex-row x-center y-center">
+            <div className="d-flex align-items-center justify-content-center">
                 {LanguageSelector()}
                 <div className={`navbar-burger cursor-pointer hover-opacity hover-scale ${showMenu ? 'is-active' : ''}`} onClick={() => toggleMenu()}>
                     <span></span>
@@ -30,7 +31,7 @@ const Navbar = () => {
 
     const LanguageSelector = () => {
         return (
-            <div className="language-selector mx-20">
+            <div className="language-selector d-flex flex-row mr-3">
                 <div className={`language-item brazil cursor-pointer ${systemConfig.language == "PT_BR" ? 'active' : ''}`} onClick={() => setLanguage("PT_BR")}></div>
                 <div className={`language-item usa cursor-pointer ${systemConfig.language == "EN" ? 'active' : ''}`} onClick={() => setLanguage("EN")}></div>
             </div>
@@ -38,27 +39,29 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar">
-            <div className="container flex-row between y-center">
-                <Link href="/">
-                    <a className="hover-opacity hover-scale">
+        <nav className="navbar p-0">
+            <Container className="d-flex flex-row align-items-center justify-content-between p-0">
+                <div className="w-100 d-flex flex-row justify-content-between container py-3">
+                    <Link href="/">
                         <Logo h={80} w={80} />
-                    </a>
-                </Link>
-                <div className="only-web">
-                    <div className="flex-row x-center y-center">
-                        {LanguageSelector()}
+                    </Link>
+                    <div className="d-none d-lg-block">
+                        <div className="d-flex flex-row x-center y-center align-items-center">
+                            {LanguageSelector()}
+                            {SayHelloButton()}
+                        </div>
+                    </div>
+                    <div className="d-lg-none d-block">
+                        {MobileMenu()}
+                    </div>
+                </div>
+                <div className="d-lg-none d-block w-100">
+                    <div className={`mobile-menu-content d-flex flex-column align-items-center justify-content-center ${showMenu ? 'is-active' : ''}`}>
                         {SayHelloButton()}
                     </div>
                 </div>
-                <div className="only-mobile">{MobileMenu()}</div>
-            </div>
-            <div className="only-mobile">
-                <div className={`mobile-menu-content flex-column x-center y-center ${showMenu ? 'is-active' : ''}`}>
-                    {SayHelloButton()}
-                </div>
-            </div>
-        </nav>
+            </Container>
+        </nav >
     )
 }
 export default Navbar
