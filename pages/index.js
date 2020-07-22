@@ -112,7 +112,9 @@ const Home = () => {
     }
 
     return (
-        <Template title="Home" image={systemConfig.icon}>
+        <Template
+        // title="Home"
+        >
             {HomeSection()}
             {AboutSection()}
             {SkillsSection()}

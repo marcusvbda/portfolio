@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '@/context/globalContext'
 import Head from 'next/head'
 import Navbar from '@/components/navbar'
 
 const Template = ({ children, title, description, image, type }) => {
+    const { systemConfig } = useContext(GlobalContext)
+
     const defaultTitle = "Marcus Vinicius Bassalobre de Assis"
     const defaultDescription = `Marcus Vinicius Bassalobre de Assis, Backend & Frontend developer`
     const defaultImageExtension = "image/png"
@@ -18,7 +21,7 @@ const Template = ({ children, title, description, image, type }) => {
         return description
     }
 
-    const getImage = () => image
+    const getImage = () => systemConfig.image ? systemConfig.image : image
 
     const getImageExtension = () => {
         if (!image) return defaultImageExtension
