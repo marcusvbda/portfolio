@@ -112,13 +112,11 @@ const Home = () => {
     }
 
     return (
-        <Template
-        // title="Home"
-        >
-            {HomeSection()}
-            {AboutSection()}
-            {SkillsSection()}
-            {RecentJobs()}
+        <Template>
+            <HomeSection />
+            <AboutSection />
+            <SkillsSection />
+            <RecentJobs />
         </Template >
     )
 }

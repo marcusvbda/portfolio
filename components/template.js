@@ -21,7 +21,7 @@ const Template = ({ children, title, description, image, type }) => {
         return description
     }
 
-    const getImage = () => systemConfig.image ? systemConfig.image : image
+    const getImage = () => systemConfig.icon ? systemConfig.icon : image
 
     const getImageExtension = () => {
         if (!image) return defaultImageExtension
