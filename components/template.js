@@ -41,7 +41,7 @@ const Template = ({ children, title, description, image, type }) => {
                 <meta property="og:image" content={getImage()} key="image" />
                 <meta property="og:url" content={getImageExtension()} key="url" />
                 <meta property="og:type" content={getType()} key="type" />
-                <meta name="google-site-verification" content="aKmxsS7lAj2xcAWGYL_9DSOZxetgJJu3DaH0HUhjJzc" />
+                <meta name="google-site-verification" content="EjVfNL7-L50qFZGgRVeOhwjXySQrbkU4_XTsic2lvGM" />
             </Head>
             <Navbar />
             {children}
