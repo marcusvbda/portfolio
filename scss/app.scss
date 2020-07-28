@@ -18,13 +18,17 @@ html {
 	border-radius: 30px;
 	font-weight: 600;
 	color: $primaryColor;
-	text-decoration: unset;
+	text-decoration: unset!important;
 	font-family: sans-serif;
 	&:hover {
 		transition:.7s;
+		text-decoration: unset!important;
 		color : white;
 		background-color: $primaryColor;
 		cursor: pointer;
+	}
+	&:focus {
+		outline: unset;
 	}
 }
 
@@ -192,19 +196,24 @@ html {
 		width: 10%;
 	}
 }
-
+.form-contact {
+	margin-top : 100px;
+}
+	
 @media only screen and (max-width: 768px) {
 	.avatar {
 		width: 80%;
 	}
-
-	
-.image-inline {
-	margin-bottom: 80px;
-	.avatar {
-		width: 30%;
+	.form-contact {
+		margin-top : 80px;
 	}
-}
+		
+	.image-inline {
+		margin-bottom: 80px;
+		.avatar {
+			width: 30%;
+		}
+	}
 
 	.hero-endsection {
 		width : 95%;
@@ -243,5 +252,37 @@ html {
 				}
 			}
 		}
+	}
+}
+
+
+.form-control{
+	&:focus {
+		background-color:unset;
+		border-color:unset;
+		outline: unset;
+		box-shadow: unset;
+	}
+}
+
+
+.btn-theme {
+	background-color: white;
+	border: 2px solid $primaryColor;
+	padding: 10px 20px 10px 20px;
+	border-radius: 30px;
+	font-weight: 600;
+	color: $primaryColor;
+	text-decoration: unset!important;
+	font-family: sans-serif;
+	&:hover {
+		transition:.7s;
+		text-decoration: unset!important;
+		color : white;
+		background-color: $primaryColor;
+		cursor: pointer;
+	}
+	&:focus {
+		outline: unset;
 	}
 }

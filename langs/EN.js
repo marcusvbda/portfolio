@@ -15,6 +15,10 @@ const EN = {
 
     "navbar.sayhello": "Say Hello",
 
-    "contact.title": "Thanks for taking the time to reach out. How can I help you?"
+    "contact.title": "Thanks for taking the time to reach out. How can I help you?",
+    "contact.subject": "Subject",
+    "contact.message": "Message",
+    "contact.email": "Email",
+    "contact.send_message": "Send Message"
 }
 export default EN

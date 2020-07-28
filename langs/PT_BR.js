@@ -13,7 +13,10 @@ const PT_BR = {
     "index.recent_jobs": "Aqui alguns dos projetos que trabalhei recentemente. Deseja ver mais ?",
     "index.know_more": "Saiba mais",
     "navbar.sayhello": "Diga um Olá",
-    "contact.title": "Obrigado por tirar um tempo para entrar em contato comigo. Como posso ajuda-lo(a) ?"
-
+    "contact.title": "Obrigado por tirar um tempo para entrar em contato comigo. Como posso ajuda-lo(a) ?",
+    "contact.subject": "Assunto",
+    "contact.message": "Mensagem",
+    "contact.email": "Email",
+    "contact.send_message": "Enviar Mensagem",
 }
 export default PT_BR
