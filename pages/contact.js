@@ -7,7 +7,6 @@ const Contact = ({ contact_email }) => {
     const { translate } = useContext(GlobalContext)
     const [form, setForm] = useState({
         subject: null,
-        from: null,
         html: null,
     })
 
@@ -26,16 +25,10 @@ const Contact = ({ contact_email }) => {
                 <h1 className="text-center f-30">{translate('contact.title')}</h1>
                 <Row className="form-contact justify-content-center">
                     <form onSubmit={handleSubmit} className="d-flex flex-wrap col-xs-12 col-md-8">
-                        <Col xs={12} md={6}>
+                        <Col xs={12} md={12}>
                             <Form.Group>
                                 <Form.Label>{translate('contact.subject')}</Form.Label>
                                 <Form.Control type="text" size="lg" required value={form.subject} onChange={i => setForm({ ...form, subject: i.target.value })} />
-                            </Form.Group>
-                        </Col>
-                        <Col xs={12} md={6}>
-                            <Form.Group>
-                                <Form.Label>{translate('contact.email')}</Form.Label>
-                                <Form.Control type="email" size="lg" required value={form.from} onChange={i => setForm({ ...form, from: i.target.value })} />
                             </Form.Group>
                         </Col>
                         <Col xs={12} md={12}>
