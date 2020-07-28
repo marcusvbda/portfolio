@@ -78,7 +78,7 @@ const Home = () => {
                             <b className="text-center my-3 f-20">Backend</b>
                             <span className="text-center my-3">{translate('index.skill_backend_title')}</span>
                             <b className="text-center text-primary">{translate('index.technologies')}</b>
-                            <p className="text-center">PHP, MongoDB, MYSQL, C#, ASP.NET CORE & PHP</p>
+                            <p className="text-center">PHP, MongoDB, MYSQL, C#, ASP.NET Core & PHP</p>
                             <span className="text-center my-3">
                                 <b className="text-center text-primary my-3">{translate('index.skill_tool')}</b>
                             </span>
