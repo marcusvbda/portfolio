@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import Link from 'next/link'
 import { GlobalContext } from '../context/globalContext'
 import { Container } from 'react-bootstrap'
+import Logo from "@/components/logo"
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -23,16 +24,6 @@ const Navbar = () => {
                 <div className={`language-item brazil cursor-pointer ${systemConfig.language == "PT_BR" ? 'active' : ''}`} onClick={() => setLanguage("PT_BR")}></div>
                 <div className={`language-item usa cursor-pointer ${systemConfig.language == "EN" ? 'active' : ''}`} onClick={() => setLanguage("EN")}></div>
             </div>
-        )
-    }
-
-    const Logo = () => {
-        return (
-            <div className="logo" style={{
-                backgroundImage: `url(${systemConfig.icon})`,
-                height: 80,
-                width: 80
-            }} />
         )
     }
 

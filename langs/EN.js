@@ -2,17 +2,19 @@ const EN = {
     "index.title": "Backend, Frontend Developer & Systems Analyst.",
     "index.description": "I create and code incredibly simple and functional things and I love what I do.",
     "index.presentation": "Hi, I’m Marcus Vinicius. Nice to meet you.",
-    "index.presentation_description": "Since I started my journey working as a backend and frontend developer almost 10 years ago, I worked remotely and in person for agencies in São Paulo and Santa Catarina (both in Brazil). I participated and helped to form great teams to create digital products for commercial use. I am quietly confident, naturally curious and perpetually working to improve my skills, growing everyday.",
+    "index.presentation_description": "I've been working as a Backend and Frontend developer for almost 10 years. I have worked remotely and in person for agencies in Santa Catarina and in the interior and capital of São Paulo. I participated and helped to form large teams, created digital products for commercial use. I am quietly confident, naturally curious and am working to improve my skills more and more.",
     "index.academic": "Academic Education",
-    "index.skill_frontend_title": "I like to code things from scratch, and enjoy bringing ideas to life in the browser.",
+    "index.skill_frontend_title": "Working as a Frontend, I like to code things from scratch, bring ideas to life and turn them into something digitally efficient.",
     "index.skill_tool": "Tools and Frameworks I like to use",
-    "index.skill_backend_title": "I value a simple content structure, clean design standards and agile interactions.",
-    "index.academic_title": "I graduated in systems analysis and development in 2016, but I always worked and studied new technologies by my self.",
+    "index.skill_backend_title": "Working as a Backend, I value a simple content structure, clean design standards and agile interactions.",
+    "index.academic_title": "I graduated in systems analysis and development in 2016, but I have always worked and studied new technologies on my own, and as a good self- taught person, I am always updating myself, creating and learning new tools and technologies in the market I work with.",
     "index.technologies": "Technologies",
     "index.my_recent_jobs": "My recent jobs",
     "index.recent_jobs": "Here are a few projects I've worked on recently. Want to see more?",
     "index.know_more": "More about me",
 
     "navbar.sayhello": "Say Hello",
+
+    "contact.title": "Thanks for taking the time to reach out. How can I help you?"
 }
 export default EN
