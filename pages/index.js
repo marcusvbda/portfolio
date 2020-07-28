@@ -78,11 +78,11 @@ const Home = () => {
                             <b className="text-center my-3 f-20">Backend</b>
                             <span className="text-center my-3">{translate('index.skill_backend_title')}</span>
                             <b className="text-center text-primary">{translate('index.technologies')}</b>
-                            <p className="text-center">PHP, MongoDB, MYSQL, C#, ASP.NET Core & PHP</p>
+                            <p className="text-center">PHP, NodeJs,MongoDB, MYSQL, C#, ASP.NET Core & PHP</p>
                             <span className="text-center my-3">
                                 <b className="text-center text-primary my-3">{translate('index.skill_tool')}</b>
                             </span>
-                            {["Laravel", "ASP.NET CORE", "Magento", "Express", "Wordpress", "Visual Studio Code"].map(x => (
+                            {["Laravel", "Magento", "Express", "Wordpress", "Visual Studio Code"].map(x => (
                                 <p className="my-0 text-center" key={x}>{x}</p>)
                             )}
                         </div>
