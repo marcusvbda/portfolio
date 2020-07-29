@@ -52,7 +52,8 @@ const Contact = ({ contact_email }) => {
 
 Contact.getInitialProps = async () => {
     return {
-        contact_email: "bassalobre.vinicius@gmail.com"
+       // contact_email: "bassalobre.vinicius@gmail.com"
+       contact_email : process.env.CONTACT_EMAIL
     }
 }
 export default Contact
