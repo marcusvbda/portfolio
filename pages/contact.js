@@ -3,15 +3,15 @@ import { GlobalContext } from '@/context/globalContext'
 import TemplateSimple from '@/components/templateSimple'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 
-const Contact = ({ contact_email }) => {
-    const { translate } = useContext(GlobalContext)
+const Contact = () => {
+    const { systemConfig, translate } = useContext(GlobalContext)
     const [form, setForm] = useState({
-        subject: null,
-        html: null,
+        subject: '',
+        html: '',
     })
 
     const sendEmail = () => {
-        window.open(`mailto:${contact_email}?subject=${form.subject}&body=${form.html}`)
+        window.open(`mailto:${systemConfig.email_contact}?subject=${form.subject}&body=${form.html}`)
     }
 
     const handleSubmit = event => {
@@ -49,10 +49,4 @@ const Contact = ({ contact_email }) => {
     )
 }
 
-
-Contact.getInitialProps = async () => {
-    return {
-        contact_email: process.env.CONTACT_EMAIL
-    }
-}
 export default Contact

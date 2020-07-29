@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Container } from 'react-bootstrap'
 
 const Home = () => {
-    const { systemConfig, translate } = useContext(GlobalContext)
+    const { translate } = useContext(GlobalContext)
 
     const HomeSection = () => {
         return (

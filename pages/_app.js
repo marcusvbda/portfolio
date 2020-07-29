@@ -29,7 +29,8 @@ App.getInitialProps = async ({ Component, ctx }) => {
         const { language } = ParseCookies(req)
         return {
             language: language || "PT_BR",
-            icon: process.env.ICON || "https://via.placeholder.com/100"
+            icon: process.env.ICON || "https://via.placeholder.com/100",
+            email_contact: "bassalobre.vinicius@gmail.com",
         }
     }
     return { pageProps: await getChildProps(Component, ctx), config: getConfigProps(ctx) }
