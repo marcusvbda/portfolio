@@ -342,14 +342,14 @@ footer {
 		@media only screen and (min-width: 769px) {
 			padding: 0px 200px 0px 200px;
 		}
+		@media only screen and (max-width: 768px) {
+			padding : 20px;
+		}
 		.cardcontent {
 			padding: 20px;
 			background-color: #37264f;
 			border-radius: 20px;
 			top: -40px;
-			@media only screen and (max-width: 768px) {
-				top: -20px!important;
-			}
 			position: relative;
 			display: flex;
 			flex-direction: row;
