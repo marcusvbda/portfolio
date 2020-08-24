@@ -128,12 +128,35 @@ const Home = () => {
         )
     }
 
+
+    const Footer = () => (
+        <footer>
+            <div className="cardsection">
+                <div className="cardcontent">
+                    <div className="title">{translate('footer.start_project')}</div>
+                    <div className="description">{translate('footer.interest')}</div>
+                    <div className="button">
+                        <Link href="/contact" >
+                            <a className="sayHello">{translate('navbar.sayhello')}</a>
+                        </Link>
+                    </div>
+                </div>
+                <div className="social-icon-list">
+                    <a href="https://github.com/marcusvbda" target="_blank" className="icon github" />
+                    <a href="https://www.linkedin.com/in/mvbassalobre" target="_blank" className="icon linkedin" />
+                    <a href="https://twitter.com/mvbassalobre" target="_blank" className="icon twitter" />
+                </div>
+            </div>
+        </footer>
+    )
+
     return (
         <Template>
             <HomeSection />
             <AboutSection />
             <SkillsSection />
             <RecentJobs />
+            <Footer />
         </Template >
     )
 }

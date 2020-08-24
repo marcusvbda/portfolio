@@ -18,5 +18,8 @@ const PT_BR = {
     "contact.message": "Mensagem",
     "contact.email": "Email",
     "contact.send_message": "Enviar Mensagem",
+
+    "footer.interest": "Interessado em trabalhar comigo ? Podemos agentar uma reunião, eu pago o café ;)",
+    "footer.start_project": "Inicie um Projeto"
 }
 export default PT_BR
