@@ -106,6 +106,23 @@ const Home = () => {
                             </b>
                         </div>
                     </div>
+                    <div className="d-flex flex-row x-center job-list">
+                        <a className="job-item cursor-pointer" href="https://mudascarvalho.com.br" target="_blank" style={{ backgroundImage: `url(/images/jobs/mudas_carvalho.png)` }}>
+                            <div className="title">Mudas Carvalho</div>
+                        </a>
+                        <a className="job-item cursor-pointer" href="https://www.mmcars.com.br" target="_blank" style={{ backgroundImage: `url(/images/jobs/mmcars.png)` }}>
+                            <div className="title">MM Cars & MM Zoo</div>
+                        </a>
+                        <div className="job-item cursor-pointer" style={{ backgroundImage: `url(/images/jobs/leads.png)`, backgroundPosition: 'left' }}>
+                            <div className="title">Ezcore Leads CRM</div>
+                        </div>
+                        <div className="job-item cursor-pointer" style={{ backgroundImage: `url(/images/jobs/prisma.png)`, backgroundPosition: 'left' }}>
+                            <div className="title">Ezcore Prisma ERP</div>
+                        </div>
+                        <div className="job-item cursor-pointer" style={{ backgroundImage: `url(/images/jobs/payt.png)`, backgroundPosition: 'left' }}>
+                            <div className="title">Payt Ecommerce</div>
+                        </div>
+                    </div>
                 </Container>
             </div>
         )

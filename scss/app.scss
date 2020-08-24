@@ -286,3 +286,47 @@ html {
 		outline: unset;
 	}
 }
+@media only screen and (max-width: 768px) {
+	.job-item {
+		width: 100%!important;
+	}
+}
+.job-list {
+	width : 100%;
+	margin-top: 30px;
+	flex-wrap: wrap;
+	justify-content: center;
+	.job-item {
+		background-position: center;
+		position: relative;
+		background-size: cover;
+		height: 250px;
+		width: 250px;
+		-webkit-box-shadow: 0px 0px 17px -1px rgba(125,35,125,1);
+		-moz-box-shadow: 0px 0px 17px -1px rgba(125,35,125,1);
+		box-shadow: 0px 0px 17px -1px rgba(125,35,125,1);
+		border-radius: 20px;
+		margin : 10px;
+		
+		.title {
+			visibility: hidden;
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			font-weight: bolder;
+			color: white;
+			background-color: #620279a1;
+			border-radius: 20px;
+		}
+		&:hover {
+			.title {
+				visibility: visible;
+			}
+		}
+	}
+}
