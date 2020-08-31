@@ -12,6 +12,7 @@
 		"bootstrap-vue": "^2.16.0",
 		"core-js": "^3.6.5",
 		"node-sass": "^4.14.1",
+		"sass-loader": "^10.0.1",
 		"vue": "^2.6.12",
 		"vue-cookies": "^1.7.3",
 		"vue-router": "^3.2.0",
