@@ -22,4 +22,4 @@ const PT_BR = {
     "footer.interest": "Interessado em trabalhar comigo ? Podemos agentar uma reunião, eu pago o café ;)",
     "footer.start_project": "Inicie um Projeto"
 }
-export default PT_BR
+module.exports = PT_BR

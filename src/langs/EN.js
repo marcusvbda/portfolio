@@ -24,4 +24,4 @@ const EN = {
     "footer.interest": "Interested in working together? We should queue up a chat. I’ll buy the coffee ;)",
     "footer.start_project": "Start a Project"
 }
-export default EN
+module.exports = EN
