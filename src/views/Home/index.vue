@@ -23,15 +23,14 @@
     </vue-template>
 </template>
 <script>
-const VueTemplate = () => import('@components/template.vue')
-const VAbout = () => import('@views/About.vue')
-const VJobs = () => import('@views/Jobs.vue')
+const VueTemplate = () => import('@components/template')
+const VAbout = () => import('./About')
+const VJobs = () => import('./Jobs')
 export default {
     components: {
         VueTemplate,
         VAbout,
         VJobs
-    },
-    created: () => document.title = `Home | ${document.title}`
+    }
 }
 </script>
