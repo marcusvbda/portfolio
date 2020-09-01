@@ -6,6 +6,7 @@ import store from '@store'
 require("@libs/bootstrap-vue")
 require("@libs/multi-language")
 require("@libs/cookies")
+require("@libs/progress")
 
 Vue.config.productionTip = false
 
