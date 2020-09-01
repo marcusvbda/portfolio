@@ -27,4 +27,4 @@ const EN = {
     "contact.subject.validation": "Your subject must be 5-30 characters long",
     "contact.subject.text": "Your subject must be 20-240 characters long",
 }
-module.exports = EN
+export default EN

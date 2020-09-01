@@ -24,4 +24,4 @@ const PT_BR = {
     "contact.subject.validation": "O assunto do email deve conter 5-30 caracteres",
     "contact.subject.text": "O assunto do email deve conter 20-240 caracteres",
 }
-module.exports = PT_BR
+export default PT_BR
