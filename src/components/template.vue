@@ -77,7 +77,7 @@
     </div>
 </template>
 <script>
-const LanguageSelector = () => import("@components/languageSelector.vue")
+const LanguageSelector = () => import("@libs/multi-language/component-selector")
 export default {
     data() {
         return {
