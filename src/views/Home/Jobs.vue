@@ -4,15 +4,15 @@
         id="recent-jobs"
     >
         <b-container class="d-flex flex-column align-items-center justify-content-center">
-            <h4 class="text-center f-30" v-html="$root.translate('index.my_recent_jobs')" />
+            <h4 class="text-center f-30" v-html="$translate('index.my_recent_jobs')" />
             <div class="d-flex flex-row x-center">
                 <div class="text-center">
-                    {{$root.translate('index.recent_jobs')}}
+                    {{$translate('index.recent_jobs')}}
                     <b class="ml-2">
                         <router-link
                             to="/contact"
                             class="text-primary"
-                            v-html="$root.translate('navbar.sayhello')"
+                            v-html="$translate('navbar.sayhello')"
                         />
                     </b>
                 </div>

@@ -16,7 +16,7 @@
                             <router-link
                                 to="/contact"
                                 class="sayHello"
-                                v-html="$root.translate('navbar.sayhello')"
+                                v-html="$translate('navbar.sayhello')"
                             />
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <router-link
                             to="/contact"
                             class="sayHello"
-                            v-html="$root.translate('navbar.sayhello')"
+                            v-html="$translate('navbar.sayhello')"
                         />
                     </div>
                 </div>
@@ -49,13 +49,13 @@
         <footer>
             <div class="cardsection">
                 <div class="cardcontent">
-                    <div class="title" v-html="$root.translate('footer.start_project')" />
-                    <div class="description" v-html="$root.translate('footer.interest')" />
+                    <div class="title" v-html="$translate('footer.start_project')" />
+                    <div class="description" v-html="$translate('footer.interest')" />
                     <div class="button">
                         <router-link
                             to="/contact"
                             class="sayHello"
-                            v-html="$root.translate('navbar.sayhello')"
+                            v-html="$translate('navbar.sayhello')"
                         />
                     </div>
                 </div>

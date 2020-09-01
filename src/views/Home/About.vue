@@ -2,10 +2,10 @@
     <div>
         <div class="about-hero" id="about">
             <b-container class="d-flex flex-column align-items-center justify-content-center">
-                <h4 class="presentation" v-html="$root.translate('index.presentation')" />
+                <h4 class="presentation" v-html="$translate('index.presentation')" />
                 <div
                     class="presentation-description text-center font-weight-light"
-                    v-html="$root.translate('index.presentation_description')"
+                    v-html="$translate('index.presentation_description')"
                 />
             </b-container>
         </div>
@@ -22,17 +22,17 @@
                         <b class="text-center my-3 f-20">Frontend</b>
                         <span
                             class="text-center my-3"
-                            v-html="$root.translate('index.skill_frontend_title')"
+                            v-html="$translate('index.skill_frontend_title')"
                         />
                         <b
                             class="text-center text-primary"
-                            v-html="$root.translate('index.technologies')"
+                            v-html="$translate('index.technologies')"
                         />
                         <p class="text-center">HTML, CSS & Javascript</p>
                         <span class="text-center my-3">
                             <b
                                 class="text-center text-primary my-3"
-                                v-html="$root.translate('index.skill_tool')"
+                                v-html="$translate('index.skill_tool')"
                             />
                         </span>
                         <p
@@ -48,14 +48,8 @@
                         <div class="text-center">
                             <img class="skill-icon" src="/images/mentor.png" alt="frontend" />
                         </div>
-                        <b
-                            class="text-center my-3 f-20"
-                            v-html="$root.translate('index.academic')"
-                        />
-                        <span
-                            class="text-center my-3"
-                            v-html="$root.translate('index.academic_title')"
-                        />
+                        <b class="text-center my-3 f-20" v-html="$translate('index.academic')" />
+                        <span class="text-center my-3" v-html="$translate('index.academic_title')" />
                     </div>
                 </div>
                 <div class="skills-card">
@@ -66,17 +60,17 @@
                         <b class="text-center my-3 f-20">Backend</b>
                         <span
                             class="text-center my-3"
-                            v-html="$root.translate('index.skill_backend_title')"
+                            v-html="$translate('index.skill_backend_title')"
                         />
                         <b
                             class="text-center text-primary"
-                            v-html="$root.translate('index.technologies')"
+                            v-html="$translate('index.technologies')"
                         />
                         <p class="text-center">PHP, NodeJs, MongoDB, MYSQL, C#, ASP.NET Core & PHP</p>
                         <span class="text-center my-3">
                             <b
                                 class="text-center text-primary my-3"
-                                v-html="$root.translate('index.skill_tool')"
+                                v-html="$translate('index.skill_tool')"
                             />
                         </span>
                         <p

@@ -22,6 +22,9 @@ const EN = {
     "contact.send_message": "Send Message",
 
     "footer.interest": "Interested in working together? We should queue up a chat. I’ll buy the coffee ;)",
-    "footer.start_project": "Start a Project"
+    "footer.start_project": "Start a Project",
+
+    "contact.subject.validation": "Your subject must be 5-30 characters long",
+    "contact.subject.text": "Your subject must be 20-240 characters long",
 }
 module.exports = EN
