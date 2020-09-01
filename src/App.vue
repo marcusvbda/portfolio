@@ -7,7 +7,7 @@
 <script>
 export default {
     mounted() {
-        // this.$Progress.finish()
+        this.$Progress.finish()
     },
     created() {
         this.$Progress.start()
