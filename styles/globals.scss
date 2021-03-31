@@ -1,3 +1,4 @@
+$primary: #5ca4db;
 html,
 body {
     padding: 0;
@@ -14,6 +15,65 @@ a {
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+.resume {
+    padding: 20px;
+}
+
+.name {
+    color: #4d4d4d;
+    margin-bottom: 5px;
+}
+
+.title {
+    color: $primary;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .link {
+        color: $primary;
+        &.active {
+            font-weight: bold;
+        }
+    }
+
+    @media print {
+        display: none !important;
+    }
+}
+
+.contacts {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vertical-separator {
+    &::after {
+        content: "  ";
+        border-right: 1px solid rgba(0, 0, 0, 0.36);
+        height: 100%;
+    }
+}
+
+.horizontal-separator {
+    &::after {
+        content: " - ";
+        margin: 0 10px;
+        color: rgba(0, 0, 0, 0.36);
+    }
+}
+
+.section-title {
+    color: $primary;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid $primary;
 }
