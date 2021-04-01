@@ -1,4 +1,6 @@
 import Link from 'next/link'
+// const profileImage = require('../../assets/images/mac-iphone.jpg');
+
 export default function Resume({ infos }) {
 	const lang_names = {
 		ptbr: { ptbr: "Português", en: "Portuguese" },
@@ -22,7 +24,10 @@ export default function Resume({ infos }) {
 					<a className={`link ${infos.lang == 'en' ? 'active' : ''}`} >{lang_names.en[infos.lang]}</a>
 				</Link>
 			</div>
-			<h1 className="name">{infos.name}</h1>
+			<div className="header">
+				<img src="profile_image.jpeg" />
+				<h1 className="name">{infos.name}</h1>
+			</div>
 			<div className="title">{infos.title}</div>
 			<div className="contacts">
 				<span className="text-muted">{infos.email}</span>
