@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Resume from 'components/resume'
-
 export default function Home({ infos }) {
 	return (
 		<>
