@@ -201,14 +201,21 @@ $muted_color: #bababa;
         color: $primary;
         font-weight: 600;
         font-size: 18px;
+        width: 50%;
+        text-align: left;
         @media screen and (max-width: 600px) {
             text-align: center;
+            width: 100%;
         }
     }
     .xp-subtitle {
         font-weight: 500;
+        width: 50%;
+        text-align: right;
         @media screen and (max-width: 600px) {
             margin-bottom: 10px;
+            text-align: center;
+            width: 100%;
         }
     }
 }
