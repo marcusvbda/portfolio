@@ -152,7 +152,7 @@ const getEducation = lang => {
 			{ title: "Systems analysis and development | University of Marília (UNIMAR)", subtitle: "Jan 2013 - Dez 2016" },
 		],
 		ptbr: [
-			{ title: "Análise e desenvilvimento de sistemas  | Universidade de Marília (UNIMAR)", subtitle: "Jan 2013 - Dez 2016" },
+			{ title: "Análise e desenvolvimento de sistemas  | Universidade de Marília (UNIMAR)", subtitle: "Jan 2013 - Dez 2016" },
 		]
 	}
 	return content[lang]
