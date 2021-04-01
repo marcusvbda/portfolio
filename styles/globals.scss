@@ -19,6 +19,7 @@ $primary: #5ca4db;
 $muted_color: #bababa;
 .resume {
     padding: 20px 50px;
+    margin-bottom: 50px;
     @media print {
         padding: 10px;
         margin: 0;
@@ -26,6 +27,7 @@ $muted_color: #bababa;
     @media screen and (max-width: 600px) {
         padding: 20px;
         margin: 0;
+        margin-bottom: 50px;
     }
 }
 
@@ -157,6 +159,10 @@ $muted_color: #bababa;
     margin-right: 10px;
 }
 
+.mt-2 {
+    margin-top: 10px;
+}
+
 .header {
     display: flex;
     flex-direction: row;
@@ -178,4 +184,37 @@ $muted_color: #bababa;
             width: 50%;
         }
     }
+}
+
+.xp-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    .xp-title {
+        color: $primary;
+        font-weight: 600;
+        font-size: 18px;
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+    }
+    .xp-subtitle {
+        font-weight: 500;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.flex-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }

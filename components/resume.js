@@ -1,5 +1,5 @@
 import Link from 'next/link'
-// const profileImage = require('../../assets/images/mac-iphone.jpg');
+import Image from 'next/image'
 
 export default function Resume({ infos }) {
 	const lang_names = {
@@ -11,6 +11,8 @@ export default function Resume({ infos }) {
 		sumary: { ptbr: "Resumo", en: "Sumary" },
 		key_skills: { ptbr: "Habilidades Chave", en: "Key Skills" },
 		technical_skills: { ptbr: "Habilidades Técnicas", en: "Technical Skills" },
+		professional_experiences: { ptbr: "Experiências Profissionais", en: "Professional Experiences" },
+		technical_specifications: { ptbr: "Especificações Técnicas", en: "Technical specifications" }
 	}
 
 	return (
@@ -25,7 +27,7 @@ export default function Resume({ infos }) {
 				</Link>
 			</div>
 			<div className="header">
-				<img src="profile_image.jpeg" />
+				<img loading="lazy" src="profile_image.jpeg" />
 				<h1 className="name">{infos.name}</h1>
 			</div>
 			<div className="title">{infos.title}</div>
@@ -39,10 +41,7 @@ export default function Resume({ infos }) {
 
 			<div className="section-title bordered">{labels.sumary[infos.lang]}</div>
 			<div className="section-content">
-				<span
-					dangerouslySetInnerHTML={{
-						__html: infos.sumary
-					}} />
+				<span dangerouslySetInnerHTML={{ __html: infos.sumary }} />
 			</div>
 
 			<div className="section-title bordered mt-3">{labels.key_skills[infos.lang]}</div>
@@ -72,6 +71,28 @@ export default function Resume({ infos }) {
 					))
 				}
 			</div>
-		</div>
+			<div className="section-title bordered mt-3">{labels.professional_experiences[infos.lang]}</div>
+			<div className="section-content flex-column">
+				{
+					infos.professional_experiences.map((row, i) => (
+						<div className="flex-column">
+							<div className="xp-row" key={i}>
+								<div className="xp-title">{row.title}</div>
+								<div className="xp-subtitle">{row.subtitle}</div>
+							</div>
+							<span dangerouslySetInnerHTML={{ __html: row.description }} />
+							<b className="mt-2">{labels.technical_specifications[infos.lang]}</b>
+							<ul className="mt-2">
+								{
+									row.technical_specifications.map((spec, y) => (
+										<li><span dangerouslySetInnerHTML={{ __html: spec }} /></li>
+									))
+								}
+							</ul>
+						</div>
+					))
+				}
+			</div>
+		</div >
 	)
 }
