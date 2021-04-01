@@ -12,7 +12,8 @@ export default function Resume({ infos }) {
 		key_skills: { ptbr: "Habilidades Chave", en: "Key Skills" },
 		technical_skills: { ptbr: "Habilidades Técnicas", en: "Technical Skills" },
 		professional_experiences: { ptbr: "Experiências Profissionais", en: "Professional Experiences" },
-		technical_specifications: { ptbr: "Especificações Técnicas", en: "Technical specifications" }
+		technical_specifications: { ptbr: "Especificações Técnicas", en: "Technical specifications" },
+		education: { ptbr: "Formação Acadêmica", en: "Academic Education" }
 	}
 
 	return (
@@ -89,6 +90,19 @@ export default function Resume({ infos }) {
 									))
 								}
 							</ul>
+						</div>
+					))
+				}
+			</div>
+			<div className="section-title bordered mt-3">{labels.education[infos.lang]}</div>
+			<div className="section-content flex-column">
+				{
+					infos.educations.map((row, i) => (
+						<div className="flex-column">
+							<div className="xp-row" key={i}>
+								<div className="xp-title">{row.title}</div>
+								<div className="xp-subtitle">{row.subtitle}</div>
+							</div>
 						</div>
 					))
 				}

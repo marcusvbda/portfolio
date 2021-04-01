@@ -146,6 +146,19 @@ const getProfessionalExperiences = lang => {
 
 
 
+const getEducation = lang => {
+	let content = {
+		en: [
+			{ title: "Systems analysis and development | University of Marília (UNIMAR)", subtitle: "Jan 2013 - Dez 2016" },
+		],
+		ptbr: [
+			{ title: "Análise e desenvilvimento de sistemas  | Universidade de Marília (UNIMAR)", subtitle: "Jan 2013 - Dez 2016" },
+		]
+	}
+	return content[lang]
+}
+
+
 export default (req, res) => {
 	if (req.method != "POST") res.status(404).end()
 	let lang = getLanguage(req)
@@ -158,6 +171,7 @@ export default (req, res) => {
 	let key_skills = getKeySkills(lang)
 	let technical_skills = getTechnicalSkills(lang)
 	let professional_experiences = getProfessionalExperiences(lang)
+	let educations = getEducation(lang)
 	res.status(200).json({
 		name,
 		title: title[lang],
@@ -168,6 +182,7 @@ export default (req, res) => {
 		sumary,
 		key_skills,
 		technical_skills,
-		professional_experiences
+		professional_experiences,
+		educations
 	})
 }
